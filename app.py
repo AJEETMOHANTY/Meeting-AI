@@ -74,9 +74,8 @@ if st.button("Generate Summary & Tasks"):
             st.stop()
 
         # save tasks
-        # save_tasks(data["tasks"])
         tasks = data.get("tasks", [])
-        save_tasks(tasks)
+        save_tasks(uploaded_file.name, tasks)
 
         print(data)
         st.write(data)
@@ -96,7 +95,7 @@ if st.button("Generate Summary & Tasks"):
         # show pending tasks
         st.subheader("Pending Tasks")
 
-        pending_tasks = get_pending_tasks()
+        pending_tasks = get_pending_tasks(uploaded_file.name)
 
         for task in pending_tasks:
             st.write(

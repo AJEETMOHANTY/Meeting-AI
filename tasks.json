@@ -1,0 +1,119 @@
+{
+    "Product Marketing Meeting.mp4": [
+        {
+            "task": "GTM teams need to confirm their support for specific corporate events by commenting on the issue.",
+            "owner": "GTM teams",
+            "status": "pending"
+        },
+        {
+            "task": "PMMs should try to help the corporate events team track down information and get commitments from campaign managers.",
+            "owner": "PMMs",
+            "status": "pending"
+        },
+        {
+            "task": "Platform team to assist with tracking down information and providing support for corporate events.",
+            "owner": "Platform team",
+            "status": "pending"
+        },
+        {
+            "task": "Review the existing content from 14.0 and identify what can be reused for the GA announcement.",
+            "owner": "The team",
+            "status": "pending"
+        },
+        {
+            "task": "Add new features to complement the reused 14.0 content for the GA announcement.",
+            "owner": "The team",
+            "status": "pending"
+        },
+        {
+            "task": "Bucket similar features together (e.g., 'research-based user experience').",
+            "owner": "The team",
+            "status": "pending"
+        },
+        {
+            "task": "Assign an excitement level (1-3) to each feature.",
+            "owner": "The team",
+            "status": "pending"
+        },
+        {
+            "task": "Determine the top five features based on excitement levels and stack rank them.",
+            "owner": "The team",
+            "status": "pending"
+        },
+        {
+            "task": "Move some items from Docs to Spreadsheet for further analysis and prioritization.",
+            "owner": "The team",
+            "status": "pending"
+        },
+        {
+            "task": "Create a PR (Pull Request) driven process to determine the top features.",
+            "owner": "The team",
+            "status": "pending"
+        },
+        {
+            "task": "Review and aggregate the list of announcements for the last 12 months, due by Tuesday.",
+            "owner": "The speaker/leader of the meeting",
+            "status": "pending"
+        },
+        {
+            "task": "Create a top five list based on the aggregated announcement information, due by Tuesday.",
+            "owner": "The speaker/leader of the meeting",
+            "status": "pending"
+        },
+        {
+            "task": "Sami will add a top 5 plan to the spreadsheet.",
+            "owner": "Sami",
+            "status": "pending"
+        },
+        {
+            "task": "Review the competitive sheet and compare against relevant competitors for each stage.",
+            "owner": "Sami",
+            "status": "pending"
+        },
+        {
+            "task": "Complete an assessment of 5-15 features through the lens of market competition (with some being unique to GitLab or competitor only).",
+            "owner": "Simon",
+            "status": "pending"
+        },
+        {
+            "task": "Call out platforms that build themselves (e.g., GitHub, Azure DevOps) and have zero capabilities in certain areas.",
+            "owner": "Simon",
+            "status": "pending"
+        },
+        {
+            "task": "Describe capabilities in a value-based way, not just by product stage.",
+            "owner": "Simon",
+            "status": "pending"
+        },
+        {
+            "task": "The team will review the infographic created by the design team.",
+            "owner": "The team",
+            "status": "pending"
+        },
+        {
+            "task": "Determine and reconcile an alternative set of stages.",
+            "owner": "The team",
+            "status": "pending"
+        },
+        {
+            "task": "Update the page content to make it easier for users to understand the features.",
+            "owner": "The team",
+            "status": "pending"
+        },
+        {
+            "task": "Channel inner Ash Withers' style for creating catchy and nuanced messaging.",
+            "owner": "Brian",
+            "status": "pending"
+        },
+        {
+            "task": "Refine the tone and language of the marketing materials to ensure parity in tone and message.",
+            "owner": "Brian",
+            "status": "pending"
+        },
+        {
+            "task": "Finalize the revised slogan ('More speed, less risk with confidence'), due at the end of the day.",
+            "owner": "The team",
+            "status": "pending"
+        }
+    ]
+}

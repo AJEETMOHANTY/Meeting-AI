@@ -1,72 +1,76 @@
-import json   # used to work with JSON files
-import os     # used to check file existence
-import time   # used to add delay between retries
+import json
+import os
 
-FILE_PATH = "data/tasks.json"   # where we store tasks
+# file where all meeting tasks will be stored
+TASK_FILE = "tasks.json"
+
+
+def save_tasks(meeting_name, tasks):
+    """
+    Save tasks for a specific meeting
+
+    Why?
+    Earlier:
+    - all meetings tasks were getting mixed together
+
+    Now:
+    - each meeting gets its own task list
+    """
+
+    # check if tasks.json already exists
+    if os.path.exists(TASK_FILE):
+
+        # open existing file and load old meeting tasks
+        with open(TASK_FILE, "r") as f:
+            all_tasks = json.load(f)
+
+    else:
+        # first time → create empty dictionary
+        all_tasks = {}
+
+    # store current meeting tasks using meeting file name
+    # example:
+    # "team_meeting.mp4": [task1, task2]
+    all_tasks[meeting_name] = tasks
+
+    # save updated data back into tasks.json
+    with open(TASK_FILE, "w") as f:
+        json.dump(all_tasks, f, indent=4)
 
 
 def load_tasks():
     """
-    Load tasks from JSON file safely
+    Load all saved meeting tasks
     """
 
-    # Case 1: File doesn't exist → return empty list
-    if not os.path.exists(FILE_PATH):
-        return []
+    if os.path.exists(TASK_FILE):
 
-    # Open file
-    with open(FILE_PATH, "r") as file:
+        with open(TASK_FILE, "r") as f:
+            return json.load(f)
 
-        # Read file content
-        content = file.read().strip()
-
-        # Case 2: File exists but empty → return empty list
-        if not content:
-            return []
-
-        # Convert JSON string → Python list
-        return json.loads(content)
+    return {}
 
 
-def save_tasks(new_tasks):
+def get_pending_tasks(meeting_name):
     """
-    Save new tasks into file
+    Return only pending tasks
+    for current meeting
+
+    Why?
+    We don't want tasks from old meetings
+    showing in new meeting UI
     """
 
-    os.makedirs("data", exist_ok=True)
+    # load all meetings data
+    all_tasks = load_tasks()
 
-    tasks = load_tasks()
+    # get tasks for current meeting only
+    meeting_tasks = all_tasks.get(meeting_name, [])
 
-    # Create a set of existing task names (lowercase for matching)
-    existing_tasks = set(
-        (task["task"].lower(), task["owner"].lower())
-        for task in tasks
-    )
-
-    # Add only new unique tasks
-    for new_task in new_tasks:
-        key = (new_task["task"].lower(), new_task["owner"].lower())
-
-        if key not in existing_tasks:
-            tasks.append(new_task)
-
-    # Save updated list
-    with open(FILE_PATH, "w") as file:
-        json.dump(tasks, file, indent=4)
-
-def get_pending_tasks():
-    """
-    This function returns only pending tasks
-    Why needed?
-    → Later UI should show only unfinished work
-    """
-
-    tasks = load_tasks()   # load all tasks from tasks.json
-
-    # create new list that only keeps pending tasks
+    # filter only pending tasks
     pending_tasks = [
-        task for task in tasks
+        task for task in meeting_tasks
         if task["status"] == "pending"
     ]
 
-    return pending_tasks   # send filtered tasks back
+    return pending_tasks

@@ -523,5 +523,130 @@
         "task": "Educate children and families about the importance of vaccination and prevention measures (e.g., masking, testing).",
         "owner": "The group",
         "status": "pending"
+    },
+    {
+        "task": "Provide feedback on which events to prioritize.",
+        "owner": "GTM teams",
+        "status": "pending"
+    },
+    {
+        "task": "Pick one event to focus on.",
+        "owner": "Cindy",
+        "status": "pending"
+    },
+    {
+        "task": "Help the corporate events team track down event commitments from campaign managers.",
+        "owner": "Platform team",
+        "status": "pending"
+    },
+    {
+        "task": "Comment on the issue indicating commitment to supporting specific events.",
+        "owner": "Campaign managers",
+        "status": "pending"
+    },
+    {
+        "task": "Review and finalize the list of \"key iterations\" for each stage.",
+        "owner": "Sydney & Brian",
+        "status": "pending"
+    },
+    {
+        "task": "Add 'manage' to one of the release stages.",
+        "owner": "Sydney & Brian",
+        "status": "pending"
+    },
+    {
+        "task": "Integrate VS Code features into the release plan.",
+        "owner": "Sydney & Brian",
+        "status": "pending"
+    },
+    {
+        "task": "Bundle less exciting features with more exciting ones to create a more compelling narrative for the release.",
+        "owner": "Sydney & Brian",
+        "status": "pending"
+    },
+    {
+        "task": "Add VS Code integration to the list of features.",
+        "owner": "Product Team",
+        "status": "pending"
+    },
+    {
+        "task": "Determine a benchmark for MAU levels (1, 2, or 3).",
+        "owner": "Product Team",
+        "status": "pending"
+    },
+    {
+        "task": "Stack rank features using MAU as a metric.",
+        "owner": "Product Team",
+        "status": "pending"
+    },
+    {
+        "task": "Identify top 5 features overall.",
+        "owner": "Product Team",
+        "status": "pending"
+    },
+    {
+        "task": "Review and aggregate the list of shipped features over the last 12 months.",
+        "owner": "Speaker",
+        "status": "pending"
+    },
+    {
+        "task": "Group proprietary scanning under vulnerability management.",
+        "owner": "Speaker",
+        "status": "pending"
+    },
+    {
+        "task": "Add a \"top five plan\" to the agenda.",
+        "owner": "Unassigned",
+        "status": "pending"
+    },
+    {
+        "task": "Review competitive sheet to ensure correct competitors are being compared against for each stage.",
+        "owner": "Sami",
+        "status": "pending"
+    },
+    {
+        "task": "Complete an assessment of the five selected competitors.",
+        "owner": "Simon",
+        "status": "pending"
+    },
+    {
+        "task": "Call out vendors that build themselves as platforms and have zero capabilities in certain areas.",
+        "owner": "The Team",
+        "status": "pending"
+    },
+    {
+        "task": "Describe vendor capabilities in a value-based way.",
+        "owner": "The Team",
+        "status": "pending"
+    },
+    {
+        "task": "Review and finalize the infographic design.",
+        "owner": "The Team",
+        "status": "pending"
+    },
+    {
+        "task": "Determine an alternative to using the 10 GitLab stages if they are not suitable.",
+        "owner": "Product Team",
+        "status": "pending"
+    },
+    {
+        "task": "Update the presentation layer to separate it from the data layer.",
+        "owner": "Product Team",
+        "status": "pending"
+    },
+    {
+        "task": "Refine the wording of the catchphrases to ensure parity in tone and language.",
+        "owner": "Brian & Team",
+        "status": "pending"
+    },
+    {
+        "task": "Consider using the phrase \"your software or product\" instead of \"deliverables\".",
+        "owner": "Brian & Team",
+        "status": "pending"
+    },
+    {
+        "task": "Provide any additional thoughts or suggestions on the new slogan (\"More speed, less risk\").",
+        "owner": "The Team",
+        "status": "pending"
     }
 ]
